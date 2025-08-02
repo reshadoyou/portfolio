@@ -1,0 +1,132 @@
+---
+import { skills } from '../data/portfolio';
+---
+
+<section id="skills" class="py-20 bg-gray-50 dark:bg-gray-800">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+          Mis <span class="text-blue-600">Skills</span>
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300">
+          Tecnologías y herramientas que domino
+        </p>
+      </div>
+      
+      <!-- Skills Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {skills.map((skillCategory, categoryIndex) => (
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <!-- Category Header -->
+            <div class="flex items-center mb-6">
+              <div class={`w-3 h-3 rounded-full mr-3 ${
+                categoryIndex === 0 ? 'bg-blue-500' :
+                categoryIndex === 1 ? 'bg-green-500' :
+                categoryIndex === 2 ? 'bg-purple-500' :
+                'bg-orange-500'
+              }`}></div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                {skillCategory.category}
+              </h3>
+            </div>
+            
+            <!-- Skills List -->
+            <div class="space-y-3">
+              {skillCategory.skills.map((skill) => (
+                <div class="flex items-center justify-between group">
+                  <span class="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {skill}
+                  </span>
+                  
+                  <!-- Skill Level Indicator -->
+                  <div class="flex space-x-1">
+                    <div class={`w-2 h-2 rounded-full ${
+                      categoryIndex === 0 ? 'bg-blue-500' :
+                      categoryIndex === 1 ? 'bg-green-500' :
+                      categoryIndex === 2 ? 'bg-purple-500' :
+                      'bg-orange-500'
+                    }`}></div>
+                    <div class={`w-2 h-2 rounded-full ${
+                      categoryIndex === 0 ? 'bg-blue-500' :
+                      categoryIndex === 1 ? 'bg-green-500' :
+                      categoryIndex === 2 ? 'bg-purple-500' :
+                      'bg-orange-500'
+                    }`}></div>
+                    <div class={`w-2 h-2 rounded-full ${
+                      categoryIndex === 0 ? 'bg-blue-500' :
+                      categoryIndex === 1 ? 'bg-green-500' :
+                      categoryIndex === 2 ? 'bg-purple-500' :
+                      'bg-orange-500'
+                    }`}></div>
+                    <div class={`w-2 h-2 rounded-full ${Math.random() > 0.3 ? 
+                      (categoryIndex === 0 ? 'bg-blue-500' :
+                       categoryIndex === 1 ? 'bg-green-500' :
+                       categoryIndex === 2 ? 'bg-purple-500' :
+                       'bg-orange-500') : 'bg-gray-300 dark:bg-gray-600'
+                    }`}></div>
+                    <div class={`w-2 h-2 rounded-full ${Math.random() > 0.7 ? 
+                      (categoryIndex === 0 ? 'bg-blue-500' :
+                       categoryIndex === 1 ? 'bg-green-500' :
+                       categoryIndex === 2 ? 'bg-purple-500' :
+                       'bg-orange-500') : 'bg-gray-300 dark:bg-gray-600'
+                    }`}></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      <!-- Additional Info -->
+      <div class="mt-16 text-center">
+        <div class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg max-w-4xl mx-auto">
+          <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+            Siempre Aprendiendo
+          </h3>
+          
+          <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+            La tecnología evoluciona constantemente, y yo también. Actualmente estoy 
+            explorando tecnologías emergentes como WebAssembly, Rust, y arquitecturas 
+            serverless para mantenerme al día con las últimas tendencias del desarrollo web.
+          </p>
+          
+          <!-- Learning Progress -->
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+              </div>
+              <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Aprendizaje Continuo</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Siempre estudiando nuevas tecnologías</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Trabajo en Equipo</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Colaboración efectiva y comunicación</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Resolución de Problemas</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Enfoque analítico y creativo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -152,4 +152,6 @@ Las contribuciones son bienvenidas. Por favor:
 
 ---
 
+🌟 **Estado del Proyecto**: ¡Portfolio desplegado y funcionando!
+
 ⭐ ¡No olvides dar una estrella al proyecto si te ha sido útil!

@@ -1,4 +1,4 @@
-# Portfolio Personal - Fernando Rodríguez
+# Portfolio Personal - Eileen Meredith
 
 Un portfolio moderno y responsivo construido con Astro, TypeScript y Tailwind CSS. Desplegado automáticamente en GitHub Pages.
 

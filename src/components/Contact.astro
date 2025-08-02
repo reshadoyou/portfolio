@@ -8,10 +8,10 @@ import { personalInfo } from '../data/portfolio';
       <!-- Section Header -->
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-          Trabajemos <span class="text-blue-600">Juntos</span>
+          Let's Work <span class="text-blue-600">Together</span>
         </h2>
         <p class="text-xl text-gray-600 dark:text-gray-300">
-          ¿Tienes un proyecto en mente? ¡Hablemos!
+          Have a project in mind? Let's talk!
         </p>
       </div>
       
@@ -20,11 +20,11 @@ import { personalInfo } from '../data/portfolio';
         <div class="space-y-8">
           <div>
             <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-              Información de Contacto
+              Contact Information
             </h3>
             <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-              Estoy disponible para proyectos freelance, oportunidades de trabajo 
-              o simplemente para charlar sobre tecnología. No dudes en contactarme.
+              I'm available for freelance projects, job opportunities, 
+              or just to chat about technology. Don't hesitate to contact me.
             </p>
           </div>
           
@@ -106,14 +106,14 @@ import { personalInfo } from '../data/portfolio';
         <!-- Contact Form -->
         <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl">
           <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-            Envíame un Mensaje
+            Send me a Message
           </h3>
           
           <form id="contact-form" class="space-y-6">
             <div class="grid md:grid-cols-2 gap-6">
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Nombre *
+                  Name *
                 </label>
                 <input 
                   type="text" 
@@ -121,7 +121,7 @@ import { personalInfo } from '../data/portfolio';
                   name="name" 
                   required
                   class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                  placeholder="Tu nombre"
+                  placeholder="Your name"
                 >
               </div>
               
@@ -135,14 +135,14 @@ import { personalInfo } from '../data/portfolio';
                   name="email" 
                   required
                   class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                  placeholder="tu@email.com"
+                  placeholder="your@email.com"
                 >
               </div>
             </div>
             
             <div>
               <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Asunto *
+                Subject *
               </label>
               <input 
                 type="text" 
@@ -150,13 +150,13 @@ import { personalInfo } from '../data/portfolio';
                 name="subject" 
                 required
                 class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                placeholder="¿De qué quieres hablar?"
+                placeholder="What would you like to talk about?"
               >
             </div>
             
             <div>
               <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Mensaje *
+                Message *
               </label>
               <textarea 
                 id="message" 
@@ -164,7 +164,7 @@ import { personalInfo } from '../data/portfolio';
                 rows="5" 
                 required
                 class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white resize-vertical"
-                placeholder="Cuéntame sobre tu proyecto..."
+                placeholder="Tell me about your project..."
               ></textarea>
             </div>
             
@@ -172,7 +172,7 @@ import { personalInfo } from '../data/portfolio';
               type="submit"
               class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
             >
-              <span>Enviar Mensaje</span>
+              <span>Send Message</span>
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
               </svg>
@@ -200,7 +200,7 @@ import { personalInfo } from '../data/portfolio';
     
     // Create mailto link
     const mailtoLink = `mailto:fernando@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-      `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     )}`;
     
     // Open email client
@@ -210,6 +210,6 @@ import { personalInfo } from '../data/portfolio';
     contactForm.reset();
     
     // Show success message (optional)
-    alert('¡Gracias por tu mensaje! Se abrirá tu cliente de email para enviarlo.');
+    alert('Thank you for your message! Your email client will open to send it.');
   });
 </script>

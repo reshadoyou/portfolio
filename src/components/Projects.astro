@@ -8,16 +8,16 @@ import { projects } from '../data/portfolio';
       <!-- Section Header -->
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-          Mis <span class="text-blue-600">Proyectos</span>
+          My <span class="text-blue-600">Projects</span>
         </h2>
         <p class="text-xl text-gray-600 dark:text-gray-300">
-          Una selección de proyectos en los que he trabajado
+          A selection of projects I've worked on
         </p>
       </div>
       
       <!-- Featured Projects -->
       <div class="mb-16">
-        <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Proyectos Destacados</h3>
+        <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Featured Projects</h3>
         <div class="grid lg:grid-cols-2 gap-8">
           {projects.filter(project => project.featured).map((project) => (
             <div class="group bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">

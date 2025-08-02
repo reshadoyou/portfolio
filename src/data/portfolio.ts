@@ -33,7 +33,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/eileen-meredith-pantoja-aa4706346/",
   github: "https://github.com/reshadoyou",
   website: "https://fernandodev.com",
-  bio: "Web Developer with over 1 years of experience creating modern web applications. Specialized in React, Node.js, and TypeScript. Passionate about clean code and best development practices.",
+  bio: "Web Developer con 1 año de experiencia creando aplicaciones web modernas. Me apasiona experimentar con nuevas tecnologías, especialmente IA, y seguir aprendiendo constantemente para mejorar mis habilidades de desarrollo.",
   resume: ""
 };
 

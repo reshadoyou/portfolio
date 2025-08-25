@@ -7,6 +7,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://reshadoyou.github.io',
   base: '/portfolio',
+  devToolbar: { enabled: false },
   integrations: [
     tailwind(),
     sitemap()

@@ -26,14 +26,14 @@ export interface Skill {
 export const personalInfo = {
   name: "Eileen",
   lastName: "Meredith",
-  title: "Web Developer",
+  title: "Software Developer",
   email: "eileen@meredith.cl",
   phone: "+56 9 4267 2988",
   location: "Santiago, Chile",
   linkedin: "https://www.linkedin.com/in/eileen-meredith-pantoja-aa4706346/",
   github: "https://github.com/reshadoyou",
   website: "https://fernandodev.com",
-  bio: "Web Developer with 1 year of experience creating modern web applications. I'm passionate about experimenting with new technologies, especially AI, and constantly learning to improve my development skills.",
+  bio: "Software Developer with experience in automation, web development, and database management. Currently expanding into desktop software. Passionate about AI and continuous learning.",
   resume: ""
 };
 
@@ -42,17 +42,9 @@ export const projects: Project[] = [
     id: "ecommerce-platform",
     title: "Meredith Fueltec Limitada",
     description: "Web application to showcase company services and products. Includes a product catalog, contact form, and company information.",
-    image: "/projects/ecommerce.jpg",
+    image: "mft.png",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     liveUrl: "https://meredith.cl",
-    featured: true
-  },
-  {
-    id: "task-manager",
-    title: "Vulnerables Protegidos",
-    description: "Web application to protect vulnerable elderly people with real-time collaboration features. Includes authentication, notifications, and offline synchronization.",
-    image: "/projects/task-manager.jpg",
-    technologies: ["React", "Node.js", "MongoDB", "JWT"],
     featured: true
   },
 
@@ -64,8 +56,8 @@ export const experience: Experience[] = [
     company: "Meredith Fueltec Limitada",
     position: "Back-office Developer",
     period: "2024 - Present",
-    description: "Excel development and maintenance of internal tools for data management and reporting. Implemented automation scripts and macros to improve efficiency.",
-    technologies: ["Excel", "VBA", "MySQL", "Softland ERP"]
+    description: "I specialize in Excel automation, developing advanced VBA macros that optimize workflows, reduce manual tasks, and improve reporting accuracy. I also oversee the company’s website hosting, handling deployment, configuration, and maintenance to ensure stable and reliable web operations.",
+    technologies: ["Excel Automation (VBA)", "MySQL", "Softland ERP", "Web Hosting"]
   },
   {
     id: "fullstack-dev",
@@ -84,14 +76,14 @@ export const skills: Skill[] = [
   },
   {
     category: "Backend",
-    skills: ["Node.js", "MongoDB", "MySQL"]
+    skills: ["Node.js", "PHP", "VBA", "SQL/MySQL"]
   },
   {
     category: "DevOps & Tools",
-    skills: ["GCP","Git", "GitHub Actions"]
+    skills: ["Google Search Console", "Git/Github", "XAMPP", "cPanel/Hosting", "FTP"]
   },
   {
     category: "Others",
-    skills: ["Agile/Scrum", "Performance Optimization", "Accessibility"]
+    skills: ["Agile/Scrum", "Business Model Canvas", "Requirements Analysis", "Project Planning"]
   }
 ];

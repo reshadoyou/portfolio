@@ -1,4 +1,4 @@
-# Portfolio Personal - Eileen Meredith
+# Portfolio Personal - Eileen Meredith P.
 
 Un portfolio moderno y responsivo construido con Astro, TypeScript y Tailwind CSS. Desplegado automáticamente en GitHub Pages.
 

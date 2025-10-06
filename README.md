@@ -84,11 +84,22 @@ Un portfolio moderno y responsivo construido con Astro, TypeScript y Tailwind CS
 
 ## 🚀 Despliegue
 
-El sitio se despliega automáticamente en GitHub Pages cuando se hace push a la rama `main`. El workflow de GitHub Actions:
+El sitio se despliega automáticamente en GitHub Pages cuando se hace push a la rama `main`. El workflow de GitHub Actions mejorado incluye:
 
-1. Instala las dependencias
-2. Construye el proyecto
-3. Despliega a GitHub Pages
+1. **Verificación del entorno** - Muestra información de Node.js y npm
+2. **Instalación con reintentos** - Instala dependencias con hasta 3 intentos automáticos
+3. **Verificación de dependencias** - Confirma que las dependencias se instalaron correctamente
+4. **Construcción del proyecto** - Ejecuta `npm run build` con Astro
+5. **Validación del build** - Verifica que `dist/` e `index.html` se generaron correctamente
+6. **Despliegue a GitHub Pages** - Sube y despliega automáticamente
+
+### ✨ Características del Workflow
+
+- 🔄 **Reintentos automáticos**: Si falla la instalación de dependencias, reintenta hasta 3 veces
+- 🧹 **Limpieza de caché**: Limpia automáticamente el caché de npm en caso de errores
+- ✅ **Verificación exhaustiva**: Confirma que todos los archivos necesarios se generaron
+- 📊 **Logs detallados**: Proporciona información útil para debugging
+- 🌍 **Descripciones en español**: Facilita el seguimiento del proceso
 
 ### Configuración Manual
 

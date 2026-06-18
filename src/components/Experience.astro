@@ -2,7 +2,49 @@
 import { experience } from '../data/portfolio';
 ---
 
-<section id="experience" class="py-20 bg-gray-50 dark:bg-gray-800">
+<section id="experience" class="py-24 bg-slate-50">
+  <div class="container mx-auto px-6">
+    <div class="max-w-5xl mx-auto">
+
+      <!-- Section Header -->
+      <div class="mb-16">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-px bg-cyan-600"></div>
+          <span class="text-cyan-600 text-sm font-semibold uppercase tracking-widest">Experience</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900">Professional Journey</h2>
+      </div>
+
+      <!-- Experience Cards -->
+      <div class="space-y-6">
+        {experience.map((exp) => (
+          <div class="bg-white border border-slate-200 rounded-xl p-8 hover:border-cyan-300 hover:shadow-md transition-all duration-300">
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
+              <div>
+                <h3 class="text-xl font-bold text-slate-900">{exp.position}</h3>
+                <h4 class="text-cyan-600 font-medium mt-1">{exp.company}</h4>
+              </div>
+              <span class="inline-flex items-center px-4 py-1.5 bg-slate-100 text-slate-600 text-sm font-medium rounded-full whitespace-nowrap self-start">
+                {exp.period}
+              </span>
+            </div>
+
+            <p class="text-slate-600 leading-relaxed mb-6">{exp.description}</p>
+
+            <div class="flex flex-wrap gap-2">
+              {exp.technologies.map((tech) => (
+                <span class="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-xs font-medium rounded">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>
   <div class="container mx-auto px-4">
     <div class="max-w-6xl mx-auto">
       <!-- Section Header -->

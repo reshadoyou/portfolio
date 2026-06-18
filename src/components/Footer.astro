@@ -2,41 +2,114 @@
 import { personalInfo } from "../data/portfolio";
 ---
 
-<footer class="bg-gray-900 text-white py-12">
-  <div class="container mx-auto px-4">
+<footer class="bg-slate-900 text-white py-10">
+  <div class="container mx-auto px-6">
     <div class="max-w-6xl mx-auto">
-      <!-- Footer minimal -->
-
-      <!-- Bottom Bar -->
-      <div
-        class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
-      >
-        <p class="text-gray-400 text-sm">
-          © {new Date().getFullYear()}
-          {personalInfo.name}
-          {personalInfo.lastName}. All rights reserved.
-        </p>
-
-        <div class="flex items-center space-x-6 mt-4 md:mt-0">
-          <span class="text-gray-400 text-sm flex items-center">
-            Made with
-            <svg
-              class="w-4 h-4 text-red-500 mx-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                clip-rule="evenodd"></path>
-            </svg>
-            and Astro
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-3">
+          <span
+            class="w-8 h-8 bg-cyan-600 text-white text-xs font-bold flex items-center justify-center rounded"
+          >
+            {personalInfo.name[0]}{personalInfo.lastName[0]}
           </span>
+          <p class="text-slate-400 text-sm">
+            © {new Date().getFullYear()}
+            {personalInfo.name}
+            {personalInfo.lastName}. All rights reserved.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <a
+            href={personalInfo.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-slate-500 hover:text-cyan-400 text-sm transition-colors"
+            >LinkedIn</a
+          >
+          <a
+            href={personalInfo.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-slate-500 hover:text-cyan-400 text-sm transition-colors"
+            >GitHub</a
+          >
+          <a
+            href={`mailto:${personalInfo.email}`}
+            class="text-slate-500 hover:text-cyan-400 text-sm transition-colors"
+            >Email</a
+          >
         </div>
       </div>
     </div>
   </div>
 </footer>
+
+<!-- Back to Top Button -->
+<button
+  id="back-to-top"
+  class="fixed bottom-8 right-8 bg-slate-900 hover:bg-cyan-600 text-white p-3 rounded border border-slate-700 hover:border-cyan-600 shadow-lg transition-all duration-300 opacity-0 invisible z-50"
+  aria-label="Back to top"
+>
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+<script>
+  const backToTopButton = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopButton?.classList.remove("opacity-0", "invisible");
+      backToTopButton?.classList.add("opacity-100", "visible");
+    } else {
+      backToTopButton?.classList.add("opacity-0", "invisible");
+      backToTopButton?.classList.remove("opacity-100", "visible");
+    }
+  });
+
+  backToTopButton?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+<div class="container mx-auto px-4">
+  <div class="max-w-6xl mx-auto">
+    <!-- Footer minimal -->
+
+    <!-- Bottom Bar -->
+    <div
+      class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+    >
+      <p class="text-gray-400 text-sm">
+        © {new Date().getFullYear()}
+        {personalInfo.name}
+        {personalInfo.lastName}. All rights reserved.
+      </p>
+
+      <div class="flex items-center space-x-6 mt-4 md:mt-0">
+        <span class="text-gray-400 text-sm flex items-center">
+          Made with
+          <svg
+            class="w-4 h-4 text-red-500 mx-1"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+              clip-rule="evenodd"></path>
+          </svg>
+          and Astro
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Back to Top Button -->
 <button

@@ -93,8 +93,3 @@ URL de producción: **https://reshadoyou.github.io/portfolio**
 Edita `src/data/portfolio.ts` para actualizar información personal, experiencia, proyectos y habilidades. Cada sección del portafolio es un componente independiente en `src/components/`.
 
 
----
-
-🌟 **Estado del Proyecto**: ¡Portfolio desplegado y funcionando!
-
-⭐ ¡No olvides dar una estrella al proyecto si te ha sido útil!

@@ -1,4 +1,4 @@
----
+﻿---
 import { personalInfo } from "../data/portfolio";
 ---
 
@@ -13,7 +13,7 @@ import { personalInfo } from "../data/portfolio";
             {personalInfo.name[0]}{personalInfo.lastName[0]}
           </span>
           <p class="text-slate-400 text-sm">
-            © {new Date().getFullYear()}
+            Â© {new Date().getFullYear()}
             {personalInfo.name}
             {personalInfo.lastName}. All rights reserved.
           </p>
@@ -75,95 +75,5 @@ import { personalInfo } from "../data/portfolio";
 
   backToTopButton?.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
-<div class="container mx-auto px-4">
-  <div class="max-w-6xl mx-auto">
-    <!-- Footer minimal -->
-
-    <!-- Bottom Bar -->
-    <div
-      class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
-    >
-      <p class="text-gray-400 text-sm">
-        © {new Date().getFullYear()}
-        {personalInfo.name}
-        {personalInfo.lastName}. All rights reserved.
-      </p>
-
-      <div class="flex items-center space-x-6 mt-4 md:mt-0">
-        <span class="text-gray-400 text-sm flex items-center">
-          Made with
-          <svg
-            class="w-4 h-4 text-red-500 mx-1"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-              clip-rule="evenodd"></path>
-          </svg>
-          and Astro
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Back to Top Button -->
-<button
-  id="back-to-top"
-  class="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 opacity-0 invisible z-50"
-  aria-label="Back to top"
->
-  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-  </svg>
-</button>
-
-<script>
-  // Back to top functionality
-  const backToTopButton = document.getElementById("back-to-top");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      backToTopButton?.classList.remove("opacity-0", "invisible");
-      backToTopButton?.classList.add("opacity-100", "visible");
-    } else {
-      backToTopButton?.classList.add("opacity-0", "invisible");
-      backToTopButton?.classList.remove("opacity-100", "visible");
-    }
-  });
-
-  backToTopButton?.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
-
-  // Smooth scrolling for footer navigation links
-  const footerLinks = document.querySelectorAll('footer a[href^="#"]');
-  footerLinks.forEach((link) => {
-    link.addEventListener("click", function (this: HTMLAnchorElement, e) {
-      e.preventDefault();
-      const targetId = this.getAttribute("href")?.substring(1);
-      const targetElement = document.getElementById(targetId || "");
-
-      if (targetElement) {
-        const headerHeight = 80;
-        const targetPosition = targetElement.offsetTop - headerHeight;
-
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "smooth",
-        });
-      }
-    });
   });
 </script>

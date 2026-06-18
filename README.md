@@ -4,9 +4,9 @@
 
 > Portafolio profesional construido con Astro, TypeScript y Tailwind CSS. Desplegado automáticamente en GitHub Pages.
 
-## 🔗 Ver portafolio en línea
+## Ver portafolio en línea
 
-**👉 [https://reshadoyou.github.io/portfolio](https://reshadoyou.github.io/portfolio)**
+**[https://reshadoyou.github.io/portfolio](https://reshadoyou.github.io/portfolio)**
 
 ---
 
@@ -23,14 +23,14 @@ Este portafolio refleja mi perfil profesional como Ingeniera en Informática esp
 
 ---
 
-## 🛠️ Tecnologías del portafolio
+## Tecnologías del portafolio
 
 - [Astro](https://astro.build/) — Framework web estático
 - [TypeScript](https://www.typescriptlang.org/) — Tipado estático
 - [Tailwind CSS](https://tailwindcss.com/) — Estilos utility-first
 - [GitHub Pages](https://pages.github.com/) — Hosting y despliegue automático
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 /
@@ -59,7 +59,7 @@ Este portafolio refleja mi perfil profesional como Ingeniera en Informática esp
 └── package.json
 ```
 
-## 🏃‍♂️ Desarrollo local
+## Desarrollo local
 
 ```bash
 # Clonar repositorio
@@ -74,7 +74,7 @@ npm run dev
 # → http://localhost:4321/portfolio
 ```
 
-## 📦 Comandos disponibles
+## Comandos disponibles
 
 | Comando           | Acción                                               |
 | :---------------- | :--------------------------------------------------- |
@@ -82,13 +82,13 @@ npm run dev
 | `npm run build`   | Genera el sitio en `./dist/`                         |
 | `npm run preview` | Previsualiza la build localmente                     |
 
-## 🚀 Despliegue
+## Despliegue
 
-El sitio se despliega automáticamente en **GitHub Pages** con cada `push` a `main` mediante GitHub Actions.
+El sitio se despliega automáticamente en GitHub Pages con cada `push` a `main` mediante GitHub Actions.
 
 URL de producción: **https://reshadoyou.github.io/portfolio**
 
-## ✏️ Personalización
+## Personalización
 
 Edita `src/data/portfolio.ts` para actualizar información personal, experiencia, proyectos y habilidades. Cada sección del portafolio es un componente independiente en `src/components/`.
 

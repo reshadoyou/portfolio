@@ -26,7 +26,7 @@ export interface Skill {
 export const personalInfo = {
   name: "Eileen",
   lastName: "Meredith",
-  title: "ERP & Business Process Specialist | Web Developer",
+  title: "Especialista en ERP y Procesos - Desarrollo Web",
   email: "eileen@meredith.cl",
   phone: "+56 9 4267 2988",
   location: "Santiago, Chile",
@@ -57,7 +57,7 @@ export const experience: Experience[] = [
     position: "Back-office Developer",
     period: "2024 - Present",
     description: "Gestiono inventario, estructura de costos y criterios para la fijación de precios en productos. Administro procesos internos en Softland ERP para mejorar trazabilidad y control operativo. Además diseñé y mantengo el sitio web corporativo utilizando herramientas de IA y desarrollo propio.",
-    technologies: ["Inventario y Costeo", "Pricing de Productos", "Softland ERP", "Excel Automation (VBA)", "Web Development con IA"]
+    technologies: ["Inventario y Costeo", "Fijación de Precios", "Softland ERP", "Automatización Excel (VBA)", "Desarrollo Web con IA"]
   },
   {
     id: "fullstack-dev",

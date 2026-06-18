@@ -25,8 +25,7 @@ import { personalInfo } from "../data/portfolio";
       <h1
         class="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
       >
-        {personalInfo.name}
-        {personalInfo.lastName}
+        {personalInfo.name} {personalInfo.lastName}
       </h1>
 
       <h2
@@ -42,23 +41,8 @@ import { personalInfo } from "../data/portfolio";
         {personalInfo.bio}
       </p>
 
-      <!-- Social Links con flecha al lado izquierdo de GitHub -->
+      <!-- Social Links -->
       <div class="flex justify-center space-x-6 items-center">
-        <!-- Flecha al lado izquierdo de GitHub, apuntando hacia la derecha -->
-        <span>
-          <svg
-            class="w-6 h-6 text-gray-400 animate-bounce"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M10 5l7 7-7 7"></path>
-          </svg>
-        </span>
         <a
           href={personalInfo.github}
           target="_blank"

@@ -26,14 +26,14 @@ export interface Skill {
 export const personalInfo = {
   name: "Eileen",
   lastName: "Meredith",
-  title: "Software Developer",
+  title: "ERP & Business Process Specialist | Web Developer",
   email: "eileen@meredith.cl",
   phone: "+56 9 4267 2988",
   location: "Santiago, Chile",
   linkedin: "https://www.linkedin.com/in/eileen-meredith-pantoja-aa4706346/",
   github: "https://github.com/reshadoyou",
   website: "https://fernandodev.com",
-  bio: "Software Developer with experience in automation, web development, and database management. Currently expanding into desktop software. Passionate about AI and continuous learning.",
+  bio: "Profesional enfocada en inventario, definición de precios de productos y administración de procesos internos en ERP. También desarrollé el sitio web corporativo combinando herramientas de IA con conocimiento técnico propio.",
   resume: ""
 };
 
@@ -56,8 +56,8 @@ export const experience: Experience[] = [
     company: "Meredith Fueltec Limitada",
     position: "Back-office Developer",
     period: "2024 - Present",
-    description: "I specialize in Excel automation, developing advanced VBA macros that optimize workflows, reduce manual tasks, and improve reporting accuracy. I also oversee the company’s website hosting, handling deployment, configuration, and maintenance to ensure stable and reliable web operations.",
-    technologies: ["Excel Automation (VBA)", "MySQL", "Softland ERP", "Web Hosting"]
+    description: "Gestiono inventario, estructura de costos y criterios para la fijación de precios en productos. Administro procesos internos en Softland ERP para mejorar trazabilidad y control operativo. Además diseñé y mantengo el sitio web corporativo utilizando herramientas de IA y desarrollo propio.",
+    technologies: ["Inventario y Costeo", "Pricing de Productos", "Softland ERP", "Excel Automation (VBA)", "Web Development con IA"]
   },
   {
     id: "fullstack-dev",
